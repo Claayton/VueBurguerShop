@@ -138,6 +138,30 @@
       "opcionais": [],
       "status": "Solicitado",
       "id": 6
+    },
+    {
+      "nome": "Paulo Matias",
+      "carne": "Alcatra",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Cheddar",
+        "Tomate",
+        "Pepino"
+      ],
+      "status": "Solicitado",
+      "id": 7
+    },
+    {
+      "nome": "Clayton Garcia",
+      "carne": "Picanha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Cheddar",
+        "Tomate"
+      ],
+      "status": "Solicitado",
+      "id": 8
     }
   ]
 }
