@@ -90,11 +90,12 @@ export default {
 
             const res = await req.json();
 
-            // coocar uma msg de sistema
-            this.msg = `Pedido N° ${res.id} realizado com sucesso`
+            // colocar uma msg de sistema
+            this.msg = `Pedido N° ${res.id} realizado com sucesso!`
 
             // limpar msg
             setTimeout(() => this.msg = "", 3000);
+
             // limpar os campos
             this.nome = "";
             this.carne = "";

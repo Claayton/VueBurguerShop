@@ -97,18 +97,8 @@
         "Salame",
         "Tomate"
       ],
-      "status": "Em produção",
+      "status": "Finalizado",
       "id": 2
-    },
-    {
-      "nome": "Joaquina",
-      "carne": "Veggie burger",
-      "pao": "Integral",
-      "opcionais": [
-        "Tomate"
-      ],
-      "status": "Solicitado",
-      "id": 5
     },
     {
       "nome": "zenildo",
@@ -120,6 +110,17 @@
       ],
       "status": "Finalizado",
       "id": 6
+    },
+    {
+      "nome": "Jurandir",
+      "carne": "Alcatra",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Pepino"
+      ],
+      "status": "Finalizado",
+      "id": 7
     }
   ]
 }
