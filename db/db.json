@@ -86,7 +86,7 @@
         "Bacon",
         "Pepino"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 1
     },
     {
@@ -97,7 +97,7 @@
         "Salame",
         "Tomate"
       ],
-      "status": "Solicitado",
+      "status": "Em produção",
       "id": 2
     },
     {
@@ -109,6 +109,17 @@
       ],
       "status": "Solicitado",
       "id": 5
+    },
+    {
+      "nome": "zenildo",
+      "carne": "Alcatra",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa"
+      ],
+      "status": "Finalizado",
+      "id": 6
     }
   ]
 }
