@@ -2,7 +2,7 @@
 from app.extensions.database import db
 
 
-class Ingrediente(db.Model):
+class Ingredient(db.Model):
     """Tabela de Ingredientes"""
     __tablename__ = 'ingredientes'
 
@@ -44,9 +44,9 @@ class Status(db.Model):
 
     id = db.Column(db.Integer, primary_key=True, nullable=False)
     tipo = db.Column(db.String(100), nullable=False)
-    pedido_id = db.Column(db.Integer, db.ForeignKey('pedido.id'), nullable=False)
+    pedido_id = db.Column(db.Integer, db.ForeignKey('pedidos.id'), nullable=False)
 
-    pedido = db.relationship('Pedidos', foreign_keys=pedido_id)
+    pedido = db.relationship('Pedido', foreign_keys=pedido_id)
 
     def __init__(self, tipo):
         self.tipo = tipo
@@ -61,9 +61,9 @@ class Opcional(db.Model):
 
     id = db.Column(db.Integer, primary_key=True, nullable=False)
     tipo =  db.Column(db.String(100), nullable=False)
-    pedido_id = db.Column(db.Integer, db.ForeignKey('pedido.id'), nullable=False)
+    pedido_id = db.Column(db.Integer, db.ForeignKey('pedidos.id'), nullable=False)
 
-    pedido = db.relationship('Pedidos', foreign_keys=pedido_id)
+    pedido = db.relationship('Pedido', foreign_keys=pedido_id)
 
     def __init__(self, tipo):
         self.tipo = tipo
