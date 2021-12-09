@@ -4,6 +4,7 @@ backports.entry-points-selectable==1.1.1
 cfgv==3.3.1
 click==8.0.3
 distlib==0.3.3
+dynaconf==3.1.7
 filelock==3.4.0
 Flask==2.0.2
 Flask-Migrate==3.1.0
