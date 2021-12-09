@@ -2,7 +2,7 @@
 from flask import Flask
 
 from app.extensions import database
-from app.extensions import migrations
+from app.extensions import migrate
 
 from .routes import teste
 from .routes.ingredients import ingredients_routes
@@ -21,7 +21,7 @@ def create_app(config_file='config'):
     app = minimal_app(config_file)
 
     database.init_app(app)
-    migrations.init_app(app)
+    migrate.init_app(app)
 
     app.register_blueprint(teste.bp)
     app.register_blueprint(ingredients_routes.bp)
