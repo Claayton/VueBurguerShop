@@ -6,6 +6,7 @@ from app.extensions import migrate
 
 from .routes import teste
 from .routes.ingredients import ingredients_routes
+from .routes.pedidos import pedidos_routes
 
 def minimal_app(config_file: dir):
     """
@@ -25,5 +26,6 @@ def create_app(config_file='config'):
 
     app.register_blueprint(teste.bp)
     app.register_blueprint(ingredients_routes.bp)
+    app.register_blueprint(pedidos_routes.bp)
 
     return app
