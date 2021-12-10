@@ -10,7 +10,7 @@ class Ingredient(db.Model):
     tipo = db.Column(db.String(100), nullable=False)
     ingrediente = db.Column(db.String(100), nullable=False)
 
-    def __init__(self, tipo, ingrediente):
+    def __init__(self, tipo:str, ingrediente:str):
         self.tipo = tipo
         self.ingrediente = ingrediente
 
